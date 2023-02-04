@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-imgOne: url("/src/image/mountains-universe-1.png") fixed no-repeat;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-imgOne);
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    gap: 3.2rem;
+    padding-top: 4rem;
+    padding-left: 7rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #C4C4CC;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+label {
+    color: white;
+}
+
+nav a.active {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+    color: #ffffff;
+}
+
+a:hover {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+    color: #ffffff;
+}
+
+.main {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    color: #ffffff;
+}
+
+.main button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-top: 2.4rem;
+    background: none;
+    padding: 1.2rem 3.2rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 300ms;
+    transition: transform 300ms;
+}
+
+.main button:hover {
+    transform: scale(1.1);
+    color: #02799D;
+    background: #FFFFFF;
+
+}
+
+/* css Universe.html */
+
+.container {
+    margin: 6.4rem 10rem;
+    width: 64.8rem;
+}
+
+.container h1 {
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%;
+
+    color: #E1E1E6;
+}
+
+.container p {
+    font-size: 1.8rem;
+    line-height: 160%;
+
+    color: #E1E1E6;
+}
+
+.universe:root{
+
+    --bg-imgOne: url("/src/image/mountains-universe02.png") fixed no-repeat;
+    
+}
+
+.exploration:root{
+
+    --bg-imgOne: url("/src/image/mountains-universe-3.png") fixed no-repeat;
+    
+}
