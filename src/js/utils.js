@@ -1,18 +1,17 @@
 const bgBody = document.querySelector("html")
+const menus = document.querySelectorAll(".menu-item")
 const hoverOne = document.querySelector(" #hoverOne")
 const hoverTwo = document.querySelector(" #hoverTwo")
 const hoverThree = document.querySelector(" #hoverThree")
- 
+
 export class Eventos {
     hoverOne() {
-        hoverOne.addEventListener("click",  () => {
-            hoverOne.classList.add("active")
-            hoverTwo.classList.remove("active")
-            hoverThree.classList.remove("active")
-            bgBody.classList.remove("universe")
-            bgBody.classList.remove("exploration")
-        
-        })
+/*         menu.addEventListener("click",  (event) => {
+          hover.classList.remove("active")
+            event.target.classList.add("active") 
+            console.log("entrou", event.target)
+        }) */
+
     }
 
     hoverTwo(){
@@ -38,9 +37,15 @@ export class Eventos {
     }
 
     backgroundChange() {
-        this.hoverOne()
-        this.hoverTwo()
-        this.hoverThree()
+        menus.forEach(menu => {
+            menu.addEventListener("click", function() {
+                menus.forEach(item => {
+                    item.classList.remove("active")
+                } ) 
+                this.classList.add("active")
+            })
+        })
     }
+
 
 }
